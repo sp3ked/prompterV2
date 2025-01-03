@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import LandingPage from './pages/landing/LandingPage';
 
-// Import your pages
 const Home = () => <div className="min-h-screen pt-32 bg-gray-50">Home Page</div>;
 const Shop1 = () => <div className="min-h-screen pt-32 bg-gray-50">Shop 1</div>;
 const Shop2 = () => <div className="min-h-screen pt-32 bg-gray-50">Shop 2</div>;
@@ -14,7 +14,7 @@ function App() {
       <div className="relative">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/shop1" element={<Shop1 />} />
           <Route path="/shop2" element={<Shop2 />} />
           <Route path="/shop3" element={<Shop3 />} />
